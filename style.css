@@ -44,6 +44,10 @@
   .thin-highlight-pink {
     background: linear-gradient(180deg,rgba(255,255,255, 0) 80%, #f9dcc4 80%);
   }
+
+  .thick-highlight-pink {
+    background: #f9dcc4 80%;
+  }
   
   a {
     /* default is text-decoration: underline */
