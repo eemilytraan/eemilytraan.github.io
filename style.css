@@ -25,7 +25,7 @@
   }
   
   .highlight-pink {
-    background: linear-gradient(180deg,rgba(255,255,255, 0) 65%, #f9dcc4 65%);
+    background: linear-gradient(180deg,rgba(255,255,255, 0) 65%, #ffd3b7 65%);
   }
  
   .highlight-white {
@@ -42,11 +42,11 @@
   }
   
   .thin-highlight-pink {
-    background: linear-gradient(180deg,rgba(255,255,255, 0) 80%, #f9dcc4 80%);
+    background: linear-gradient(180deg,rgba(255,255,255, 0) 80%, #ffd3b7 80%);
   }
 
   .thick-highlight-pink {
-    background: #f9dcc4 80%;
+    background: #ffd3b7 80%;
   }
   
   a {
@@ -56,7 +56,7 @@
   }
 
   a:hover, a:focus {
-    color: #f07167;
+    color: #6769f0;
   }
 
 
@@ -111,7 +111,7 @@
   }
   
   .pink-background {
-    background: #fcd5ce;
+    background: #dae5fe;
     display: flex;
     flex-direction: column;
     justify-content: center;
