@@ -411,12 +411,6 @@
       margin: 2rem 0;
   }
 
-  .main__img--container img {
-      max-width: 80%; /* Ensure the image scales down */
-      height: auto;
-      margin: 0 auto;
-      justify-content: center;
-  }
 }
 
 
