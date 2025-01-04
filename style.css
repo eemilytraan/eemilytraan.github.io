@@ -336,8 +336,8 @@
 }
 
 #main__img {
-  height: 80%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
   justify-content: center;
 }
 
@@ -353,11 +353,11 @@
       width: 100%;
       margin: 0 auto;
       height: auto; /* Adjust height to fit content */
-      padding: 2rem; /* Add padding for spacing */
+      padding: 50px; /* Add padding for spacing */
   }
 
   .main__img--container {
-      margin-bottom: 2rem; /* Add spacing below image */
+      margin-bottom: 1rem; /* Add spacing below image */
       justify-content: center; /* center image */
   }
 
@@ -383,6 +383,7 @@
   .main__btn {
       padding: 12px 36px;
       margin-top: 2rem;
+      margin-bottom: 3rem;
   }
 }
 
@@ -408,7 +409,7 @@
 
   .main__btn {
       padding: 10px 24px; /* Adjust button size */
-      margin: 2rem 0;
+      margin: 2rem 3rem 0 0;
   }
 
 }
