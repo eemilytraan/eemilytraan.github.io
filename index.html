@@ -1,597 +1,206 @@
-<!DOCTYPE html />
-<html>
-    <!-- alt-z to see the code -->
+<!DOCTYPE html>
+<html lang="en">
 
+<!-- heading of website -->
 <head>
-    <meta charset=“UTF-8” />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/294729/isolated/preview/c873a2bc381b57447a355d10d6fd1eee-self-esteem-flower-cute-icon.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- links style.css file -->
+     <link rel="stylesheet" href="style.css" />
+    <!-- links google fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- links flaticon -->
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+
+
+     <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/294729/isolated/preview/c873a2bc381b57447a355d10d6fd1eee-self-esteem-flower-cute-icon.png" type="image/x-icon" />
+
+    <!-- title of tab -->
     <title> Emily Tran </title>
 </head>
 
-
+<!-- body of website -->
+ <!-- visible stuff -->
 <body>
-
-    <div class="nav-bar">
-        <div class="float: left;">
-            <a href="index.html"
-                class="nav-item"
-                title="Home">
-                <img src="https://img.icons8.com/?size=128&id=55396&format=png" />
-            </a>
-
-            <div style="float: right;">
-                <a href="#projects" 
-                    class="nav-item" 
-                    title="Projects">
-                    <img src="https://img.icons8.com/?size=128&id=46858&format=png" />
-                </a>
-                <a href="#princetonUniversity"
-                    title="Princeton University">
-                    <img src="https://img.icons8.com/?size=128&id=42888&format=png" />
-                </a>
-            </div>
-        </div>
+    <div class="navbar__top">
+        <span class="highlight-grey"> Princeton University 2028 </span>
     </div>
     
 
-    <p class="name">
-        <br/>
-        <span class="highlight-pink">
-            Emily Tran
-        </span>
-    </p>
+    <!-- navbar container -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <!-- creates logo on the right-->
+            <a href="/" id="navbar__logo">
+                Emily Tran </a>
 
-    <p class="intro">
-        <br/>
-        <i> Xin chao, Moi nguoi! </i> 
-        <br/>
-        </br>
-        I'm Emily, a Chinese-Vietnamese-American from the MetroAtlanta area in Georgia. I'm currently a freshman at Princeton University, looking to pursue a degree in electrical and computer engineering with a concentration in data and information systems. 
-        <br/>
-        I plan to minor in finance and computer science.
-        <br/>
-        </br>
-        I love to read, crochet, listen to music, and ice skate in my free time!
-        <br/>
-    </p>
+            <!-- .class#id-->
+            <!-- for mobile design -->
+            <div class="navbar__toggle" id="mobile-menu"> 
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
 
-<!-- CURRENT PROJECTS -->
-    <div id="projects", class="blue-background">
+            <!-- ul for hamburger drop down -->
+            <ul class="navbar__menu">
+                <!-- past projects -->
+                 <li class="navbar__item">
+                        <a href="/past.html" class="navbar__links"> Past Works </a> </li>
 
-        <div class="margin">
-            <h2 class="section-title">
-                <span class="highlight-white">
-                    Current Projects
-                </span>
-            </h2>
-            
-            <br/>
-            <!-- GITHUB -->
-            <p class="proj-title">
-                <b> Computer Science Portfolio </b> @ 
-                <a href="https://github.com/eemilytraan/"
-                    target="_blank">
-                    <span class="thin-highlight-white">
-                        GitHub Profile 
-                    </span>
-                </a> 
-                <img class="descriptive-icon"
-                    src="https://cdn-icons-png.flaticon.com/128/3767/3767084.png" />
-                    <span
-                    style="float: right; font-size: 14px; ">
-                    &nbsp; Jun 2023&#8212; Present
-                </span>
-            </p>
+                <!-- second menu item -->
+                 <li class="navbar__item">
+                    <a href="/current.html" class="navbar__links"> Current Works </a> </li>
 
-            <p class="proj-text">
-                <br/>
-                <ul>
-                    <li> Familiar with different languages including Python, Javascript, HTML, CSS, and Java </li>
-                    <li> Exploring programs and softwares such as Open CV, Jupyter Notebooks, and VS Code Editor </li>
-                </ul>
-            </p>
+                <!-- third menu item -->
+                <li class="navbar__item">
+                    <a href="/princeton.html" class="navbar__links"> Princeton Activities </a> </li>
 
-            <!-- STUDY WOLVES -->
-            <p class="proj-title">
-                <b> Founder & Web Developer </b> of 
-                <a href="https://studywolves.wixsite.com/study-wolves"
-                    target="_blank">
-                    <span class="thin-highlight-white">
-                        Study Wolves 
-                    </span>
-                </a>
-                <img class="descriptive-icon"
-                    src="https://cdn-icons-png.flaticon.com/128/2436/2436632.png" />
+                <!-- button -->
+                 <li class="navbar__btn">
+                    <a href="/about.html" class="button"> <i class="fi fi-rr-user"></i> </a> </li>
+             </ul>
+                
+        </div>
+    </nav>
 
-                    <span
-                        style="float: right; font-size: 14px; "> &nbsp; Jul 2022&#8212; Present
-                    </span>
+
+
+    <!-- hero section -->
+    <div class="main">
+
+        <div class="main__container">
+            <!-- content with text -->
+
+            <!-- image -->
+            <div class="main__img--container">
+                <iframe src="https://drive.google.com/file/d/17Cosal6tHxyuEiZpTLzO51b2rF85TTOi/preview" width="480" height="480" frameborder="0"></iframe>
+            </div>
+
+
+            <div class="main__content">
+                <h1> - </h1>
+                <h2> EMILY TRAN </h2>
+                <br>
+                <p>
+                    Electrical and Computer Engineering Major.
+                    <br>
+                    Computer Science and Finance Minor.
+                    <br>
+                    <br>
                 </p>
 
-            <p class="proj-text">
-                <br/>
-                <ul> 
-                    <li> Created a free tutoring site for fifth-grade students and AP students to ask me math questions and review class material </li> 
-                    <li> Organize over 30 fifth-grade students to test run the website and received personal feedback each week </li>
-                    <li> Collaborate with 4 school teachers to develop the most accurate and helpful site for students </li>
-                    <li> Work to expand the site to include math courses that are notoriously difficult at my high school </li>
-                </ul>
-            </p>
-
-            <!-- CODING MADE EASY -->
-            <p class="proj-title">
-                <b> Founder, Writer, & Web Designer </b> of 
-                <a href="https://cdn.textstudio.com/output/sample/normal/3/5/0/5/developing-logo-182-15053.png"
-                    target="_blank">
-                    <span class="thin-highlight-white">
-                        Coding Made Easy 
-                    </span>
-                </a> 
-                <img class="descriptive-icon"
-                    src="https://cdn-icons-png.flaticon.com/128/3145/3145765.png" />
-
-                    <span
-                        style="float: right; font-size: 14px; ">&nbsp; Sep 2022&#8212; Present
-                    </span>
-            </p>
-
-            <p class="proj-text">
-                <br/>
-                <ul>
-                    <li> Developing a free Python and Javascript coding site and book to learn and review the basics of each language </li>
-                    <li> Working on HTML, Javascript, CSS formatting on Github.com to create a static page </li>
-                    <li> Actively looking for collaborators and a team to help build the site more efficiently </li>
-                    <li> Present as a learning tool in my STEM Club to encourage more people to learn the most important language: coding languages </li>
-                </ul>
-            </p>
-
-        </div>
-    </div>
-
-<!-- PRINCETON UNI -->
-    <div id="princetonUniversity", class="white-background">
-
-        <div class="margin">
-            <h2 class="section-title">
-                <span class="highlight-pink">
-                Projects and Works @ Princeton
-                </span>
-            </h2>
-
-            <!-- VSA -->
-            <br/>
-            <p class="proj-title">
-                <b> Treasurer </b> of 
-                <!-- <a href="https://www.princeton.edu/~vsaboard/" 
-                    target="_blank"> -->
-                    <span class="thin-highlight-pink">
-                        Vietnamese Student Association
-                    </span>
-                </a>
-                <img class="descriptive-icon"
-                    src="https://cdn-icons-png.freepik.com/512/551/551942.png" />
-                    <span
-                    style="float: right; font-size: 14px; "> &nbsp; Sep 2023 &#8212; Present
-                </span>
-            </p>
-
-            <p class="proj-text">
-                <br/>
-                <ul>
-                    <li> Take weekly meeting notes and relay information to the rest of the executive board </li>
-                    <li> Connect with Office of Undergraduate Studies to plan monthly member events </li>
-                    <li> Work on budgetting and submit budgets to the Princeton Projects Board every month </li>
-                    <li> Submit itemized receipts of purchases to refund the club and manage the budget to remain positive </li>
-                </ul>
-            </p>
-
-            <!-- ROBOTICS CLUB -->
-            <p class="proj-title">
-                <b> Member </b> of 
-                <a href="https://robotics.princeton.edu/" 
-                    target="_blank">
-                    <span class="thin-highlight-pink">
-                        Robotics Club Wall-E Team
-                    </span>
-                </a>
-                <img class="descriptive-icon"
-                    src="https://attic.sh/a2suut98roa6v9ex2ue6twfd3s1e" />
-
-                    <span
-                        style="float: right; font-size: 14px; "> &nbsp; Sep 2023 &#8212; Present
-                    </span>
-            </p>
-
-            <p class="proj-text">
-                <br/>
-                <ul>
-                    <li> Attend weekly meetings to plan the logistics and design component of Wall-E's eyes </li>
-                    <li> Work on OnShape CAD software to practice design and physics of eye movement </li>
-                </ul>
-            </p>
-
-        
-        </div>
-    </div>
-
-<!-- PAST PROJECTS AND WORKS-->
-    <div class="blue-background">
-        <div class="margin">
-            <h2 class="section-title">
-                <span class="highlight-white">
-                    Past Projects and Works
-                </span>
-            </h2>
-
-
-            <!-- MATHNASIUM -->
-            <br/>
-            <p class="proj-title">
-                <b> Math Instructor </b> @ 
-                <a href="https://www.mathnasium.com/braselton/our-team" 
-                    target="_blank">
-                    <span class="thin-highlight-white">
-                        Mathnasium
-                    </span>
-                </a>
-                <img class="descriptive-icon"
-                    src="https://cdn-icons-png.flaticon.com/128/1739/1739515.png" />
-                    <span
-                    style="float: right; font-size: 14px; ">&nbsp; Oct 2023&#8212; May 2024
-                </span>
-            </p>
-            <p class="proj-text">
-                <br/>
-                <ul>
-                    <li> Conduct math lessons to an average of 3 students simultaneously </li>
-                    <li> Time: Devote 5% to friendly introductions and planning, 45% to teaching, 45% to independent work, 5% to closing encouragements </li>
-                    <li> Work on customized learning plans and specific skill improvement goals for each student </li>
-                    <li> Build a positive and supportive learning environment and strong relationships with young students </li>
-                </ul>
-            </p>
-
-            <!-- DCCU -->
-            <p class="proj-title">
-                <b> Internship </b> @
-                <a href="https://www.deltacommunitycu.com/"
-                    target="_blank">
-                    <span class="thin-highlight-white">
-                    Delta Community Credit Union 
-                    </span>
-                </a>
-                <img class="descriptive-icon"
-                    src="https://cdn-icons-png.flaticon.com/128/2830/2830284.png" />
-                    <span
-                    style="float: right; font-size: 14px; ">&nbsp; Jun 2022&#8212; Aug 2023
-                </span>
-            </p>
-
-            <p class="proj-text">
-                <br/>
-                <ul>
-                    <li> Maintained confidentiality of over 400,000 members of the credit union </li>
-                    <li> Coordinated with a team of 9 staff members to help guests in an efficient equitable manner </li>
-                    <li> Marketed over 20 credit union services and products to best serve members’ financial situation </li>
-                    <li> Handled 50 to 200 transactions a day consisting over an estimated $250,000 per day </li>
-                    <li> Worked 15-25 hours a week on top of rigorous coursework </li>
-                </ul>
-            </p>
-
-
-            <!-- HIGH SCHOOL -->
-            <p class="proj-title">
-                <b> Impact </b> @
-                <a href="https://www.bufordhs.org/apps/pages/Clubs"
-                    target="_blank"> 
-                    <span class="thin-highlight-white">
-                    Buford High School 
-                    </span>
-                </a>
-                <img class="descriptive-icon"
-                    src="https://cdn-icons-png.flaticon.com/128/3990/3990804.png" />
-                    <span
-                    style="float: right; font-size: 14px; ">&nbsp; Aug 2020&#8212; May 2024
-                </span>
-            </p>
-
-            <p class="proj-text">
-                <br/>
-                <strong> GPA: </strong> 97.503 of 100.000 <br/>
-                <strong> Rank: </strong>4 of 439 <br/>
-                <strong> Coursework: </strong> 12 APs and 9 Honors 
-                <br/> <br/>
-                <ul>
-                    <li> Co-Founder of STEM Club </li>
-                    <li> Co-President of Kiwanis Community Service Key Club -- 200+ hours of service </li>
-                    <li> Co-President of Spanish Club </li>
-                        <ul>
-                            <li> In collaboration with and fundraising for <a href="https://www.pulseraproject.org/"> <span class="thick-highlight-pink"> The <i> Pulsera </i> Project</span> </a>: supporting employment, education, and cultural art in Central American communities  </li>
-                        </ul>
-                    <li> Member and Writing Tutor of the Writing Center </li>
-                    <li> Member and Math Tutor of Mu Alpha Theta Math Honor Society </li>
-                    <li> Member of National Honors Society -- 100+ hours of service </li>
-                    <li> Member of BETA Club -- 60+ hours of service </li>
-                    <li> VP of Community Service and Member of Distributive Education Clubs of America </li>
-                        <ul>
-                            <li> 2x State Competitor in <span class="thick-highlight-pink"> Entrupreneurship Series </span> </li>
-                        </ul>
-                    <li> Member of Health Occupations Students of America </li>
-                        <ul>
-                            <li> <b> 19th </b> in Georgian District 6 in <span class="thick-highlight-pink"> Biomedical Labratory Research </span> </li>
-                            <li> <b> 5th </b> in Georgian District 6 in <span class="thick-highlight-pink"> Pathphysiology </span> </li>
-                            <li> State Competitor in <span class="thick-highlight-pink"> Mental Health Promotion </span> <a href="https://www.instagram.com/_beehappier?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> "BeeHappier" Campaign </a> </li>
-                            <li> <b> 1st </b> in Georgian District 6 in <span class="thick-highlight-pink"> Health Informatics </span> </li>
-                        </ul>
-                    <li> Member of Future Business Leaders of America 
-                        <ul>
-                            <li> State Competitor in <span class="thick-highlight-pink"> E-Business Website Design </span> </li>
-                        </ul>
-                </ul>
-            </p>
-
-            <!-- STEM CLUB -->
-            <p class="proj-title">
-                <b> Co-Founder & Tutor </b> of the
-                <span class="thin-highlight-white">
-                    Buford STEM Club 
-                </span>
-                <img class="descriptive-icon"
-                    src="https://cdn-icons-png.flaticon.com/128/4776/4776049.png" />
-                    <span
-                    style="float: right; font-size: 14px; ">&nbsp; Oct 2023&#8212; Aug 2024
-                </span>
-            </p>
-
-            <!-- STEM CLUB -->
-            <p class="proj-text">
-                <br/>
-                <ul>
-                    <li> Found a student organization that endeavors to inspire deeper thinking through STEM based experiments and project based learning </li>
-                    <li> Bridge the gap between men and women in the STEM field by inspiring young women to pursue STEM careers and making women leaders </li>
-                    <li> Connected with 4 STEM professionals to organize the club and established connections with experts </li>
-                    <li> Created a tutoring program for science classes and encouraging community service opportunities </li>
-                    <li> Teaching leadership skills and designing budgets, proposals, and club plans to the successive officers </li>
-                    <li> Planning a recycling initiative to reduce paper waste at my high school </li>   
-                </ul>
-            </p>
-            
-        </div>
-    </div>
-
-
-<!-- Future Plans -->
- <!--
-    </div>
-    <div id="futurePlans" class="blue-background">
-        <div class="margin">
-
-            <h2 class="section-title">
-                <span class="highlight-white">
-                    CS is Loading...!
-                </span>
-            </h2>
-            
-            </br>
-            <p class="proj-title">
-                
-                <b> Accepted </b> @ 
-                <a href="https://twin-cities.umn.edu/home"
-                    target="_blank">
-                    <span class="thin-highlight-white">
-                        The University of Minnesota Twin Cities
-                    </span>
-                </a> 
-                <img class="descriptive-icon"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNtoo87OeW_gYUaZT1P2U2NbI7neBLI9X6pA&usqp=CAU" />
-                    <span
-                        style="float: right; font-size: 14px; ">&nbsp; Nov 2023
-                    </span>
-            </p>
-            <p class="proj-text"> Minneapolis, Minnesota. <br> College of Science and Engineering. </br> Recipient of the <strong> National Academic Scholarship </strong> undergraduate merit-based scholarship, valued at $60,000 over four years. </br> Commune Vinculum Omnibus Artibus or  <i> “A Common Bond For All the Arts”. </i>
-            </p>
-
-
-            <p class="proj-title">
-                <b> Accepted </b> @ 
-                <a href="https://www.gatech.edu/"
-                    target="_blank">
-                    <span class="thin-highlight-white">
-                        The Georgia Institute of Technology
-                    </span>
-                </a> 
-                <img class="descriptive-icon"
-                    src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg" />
-                    <span
-                        style="float: right; font-size: 14px; ">&nbsp; Dec 2023
-                    </span>
-            </p>
-            <p class="proj-text"> Atlanta, Georgia. <br> College of Computing. </br> “Progress and Service”.
-            </p>
-
-
-            <p class="proj-title">
-                <b> Accepted </b> @ 
-                <a href="https://umich.edu/"
-                    target="_blank">
-                    <span class="thin-highlight-white">
-                        The University of Michigan
-                    </span>
-                </a> 
-                <img class="descriptive-icon"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/2560px-Michigan_Wolverines_logo.svg.png" />
-                    <span
-                        style="float: right; font-size: 14px; ">&nbsp; Jan 2024
-                    </span>
-            </p>
-            <p class="proj-text"> Ann Arbor, Michigan. <br> College of Literature, Science, and the Arts. </br> "Artes, Scientia, Veritas".
-            </p>
-
-
-            <p class="proj-title">
-                <b> Accepted </b> @ 
-                <a href="https://illinois.edu/"
-                    target="_blank">
-                    <span class="thin-highlight-white">
-                        The University of Illinois Urbana-Champaign.
-                    </span>
-                </a> 
-                <img class="descriptive-icon"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRus-313kc8OcReRb2pm9FdVKkSBeYgWkaSRQ&usqp=CAU" />
-                    <span
-                        style="float: right; font-size: 14px; ">&nbsp; Jan 2024
-                    </span>
-            </p>
-            <p class="proj-text"> Champaign, Illinois. <br> College of Liberal Arts & Sciences. </br> "Learning and Labor".
-            </p>
-
-
-            <p class="proj-title">
-                <b> Accepted </b> @ 
-                <a href="https://clarku.edu/"
-                    target="_blank">
-                    <span class="thin-highlight-white">
-                        Clark University.
-                    </span>
-                </a> 
-                <img class="descriptive-icon"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSozniYsBrzLebWlbb-w8WIutkdWfXunm_aqgaHe-WoOpT0O8jNwsm2h46Nubp_70R6UzM&usqp=CAU" />
-                    <span
-                        style="float: right; font-size: 14px; ">&nbsp; Feb 2024
-                    </span>
-            </p>
-            <p class="proj-text"> Worcester, Massachusetts. <br> Fu Foundation School of Engineering and Applied Science. </br> Clark University Honors Experience invitation. </br> Recipient of the <strong> Traina Scholarship </strong> undergraduate merit-based scholarship, valued at $30,000 per year. </br> Fiat Lux or "Let There Be Light".
-            </p>
-
-
-            <p class="proj-title">
-                <b> Accepted </b> @ 
-                <a href="https://purdue.edu/"
-                    target="_blank">
-                    <span class="thin-highlight-white">
-                        Purdue University.
-                    </span>
-                </a> 
-                <img class="descriptive-icon"
-                    src="https://images.thdstatic.com/productImages/a128980c-526f-4010-befc-1ab629bac761/svn/suede-fanmats-sports-rugs-18635-64_600.jpg" />
-                    <span
-                        style="float: right; font-size: 14px; ">&nbsp; Mar 2024
-                    </span>
-            </p>
-            <p class="proj-text"> West Lafayette, Indiana. <br> College of Science. </br> Six pillars: integrity, respect, honor, inclusion, innovation, and growth.
-            </p>
-
-
-            <p class="proj-title">
-                <b> Accepted </b> @ 
-                <a href="https://umass.edu/"
-                    target="_blank">
-                    <span class="thin-highlight-white">
-                        The University of Massachusetts Amherst.
-                    </span>
-                </a> 
-                <img class="descriptive-icon"
-                    src="https://www.umass.edu/sites/default/files/2023-03/UMass_Seal_Medium_PMS_202_0.png" />
-                    <span
-                        style="float: right; font-size: 14px; ">&nbsp; Mar 2024
-                    </span>
-            </p>
-            <p class="proj-text"> Amherst, Massachusetts. <br> Manning College of Interfmation and Computer Sciences. </br> Recipient of the <strong> Chancellor's Award </strong> undergraduate merit-based scholarship, valued at $16,000 per year. </br> Ense petit placidam sub libertate quietem or "By the sword we seek peace, but peace only under liberty".
-            </p>
-
-
-            <p class="proj-title">
-                <b> Accepted </b> @ 
-                <a href="https://uga.edu/"
-                    target="_blank">
-                    <span class="thin-highlight-white">
-                        The University of Georgia.
-                    </span>
-                </a> 
-                <img class="descriptive-icon"
-                    src="https://bloximages.newyork1.vip.townnews.com/redandblack.com/content/tncms/assets/v3/editorial/b/15/b158ab90-7480-11e6-99c6-471896ee46d2/57cf42faa88ad.image.jpg?resize=400%2C400" />
-                    <span
-                        style="float: right; font-size: 14px; ">&nbsp; Mar 2024
-                    </span>
-            </p>
-            <p class="proj-text"> Athens, Georgia. <br> Franklin College of Arts and Sciences. </br> To teach, to serve, and to inquire into the nature of things.
-            </p>
-
-
-            <p class="proj-title">
-                <b> Accepted </b> @ 
-                <a href="https://cornell.edu/"
-                    target="_blank">
-                    <span class="thin-highlight-white">
-                        Cornell University.
-                    </span>
-                </a> 
-                <img class="descriptive-icon"
-                    src="https://seeklogo.com/images/C/cornell-university-logo-D0E64090DB-seeklogo.com.png" />
-                    <span
-                        style="float: right; font-size: 14px; ">&nbsp; Mar 2024
-                    </span>
-            </p>
-            <p class="proj-text"> Ithaca, New York. <br> College of Arts and Sciences. </br> 
-                <a href="https://scl.cornell.edu/get-involved/cornell-commitment/cornell-tradition"
-                    target="_blank">
-                    <span class="thick-highlight-pink">
-                        Cornell Tradition Fellow</span>
-                </a> selectee.
-                </br> 
-                Receipient of the <strong> Tradition Fellows </strong> scholarship, valued at $4,000 per year with an additional $3,500 over four years. </br> “I would found an institution where any person can find instruction in any study.”
-            </p>
-            
-
-            <p class="proj-title">
-                <b> Accepted </b> @ 
-                <a href="https://princeton.edu/"
-                    target="_blank">
-                    <span class="thin-highlight-white">
-                        Princeton University.
-                    </span>
-                </a> 
-                <img class="descriptive-icon"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4XlVOL0euDg5N3qCup5XX7GFE1fqvUHq1TA&usqp=CAU"/>
-                    <span
-                        style="float: right; font-size: 14px; ">&nbsp; Mar 2024
-                    </span>
-            </p>
-            <p class="proj-text"> Princeton, New Jersey. <br> Computer Science - B.S.E. </br> In the Nation's Service and the Service of Humanity.
-            </p>
-            
-
-            <br>
-
-            
-        </div>
-    </div>
--->
-    <div class="margin bottom-margin">
-
-        <div class="footer social-media">
-            <div class="social-media-item">
-
-                <a href="https://www.linkedin.com/in/emily-tran-9571b1279/", target="_blank">
-                    <img class="space"
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDUlEQVR4AWP4////gOLB44D6nTcsGIo33QHi/zTGd0B2YTiAPpYjHIHNAf/piQk6wGPW8f/rLz8HYRCbXg5AWI4GQGJ0cwDY12gAJDbcHUA4CkZAIqQUK7Ts/m/SfxBMs5RupswBaACr+P47b/5zlG/5DyzZ/r/+8hNF7vuvP//nn3r0X6JhJ+0ccPrR+/+H7735jw9cf/n5v0D1Nuo5gBxQve06zR0AjoL7b7/+//zjN4bc+ScfaOeA33///k9Yfg4mDw7u/Xdeo6uhnQP6D93FMNxlxjF0ZbRzgMXEQ9iyI90cALIMJoccDXRzAK6CZog6YNQBow6gIx54Bwx4x2RAu2bAysoEZu9o7xgAQrvkxt3WZi0AAAAASUVORK5CYII=" />
-
-                <a href="https://github.com/eemilytraan", target="_blank">
-                    <img class="space"
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAb1BMVEX////4+Pi3ubtvcnZNUVU+Q0cpLjLr6+x3en0sMTYkKS59gIORk5aUl5n8/Pzw8PFTV1tbX2Pc3d5DSEzn5+g3PECLjpFKTlKFh4qxs7XCxMUwNTq/wcLh4uPV1tZzd3o/Q0jOz9CmqKpjZ2qfoaSrd37mAAABPUlEQVR4AW3TBZKEMBAF0B8GCHzcnbW5/xm30qEyknklcU/DgQpuYRTHUXgLFHw6SemkmcYrlcd8kRYlnlQ1PU0Fp434Qde75Qd+1FUQKiRZjyGfTGNjKhWMmSQXYO3Ibao3MlqBnSRzADhk/ycAdcqclSSHnEUD+KLt8KalMQMqpl3izU5jKxHQGCq8Ud80fq4VfuFZaIyQO4wVPEre5g+RrIAPJrkQSL8OPjv3htQmH8guU5uwgseeP7ITMYBnpdFgvlJPcx0zoLjjzS/FDrVRvH6xsqDYlLx29huRUaFx6YuI1mhKMbddf9trEzca7rmRk/FxpiRXiJO8FDBURyb4yfO7glC8TOpacmAc4ElMEWlc2oGckjwvYVFEB5wjouE6uLBwquypQym/scKrM4njElYaJy182q15aDj/oQMZkS8JH3IAAAAASUVORK5CYII=" />
-
+                <!-- button -->
+                <button class="main__btn">
+                    <a href="/about.html">
+                        About Me
+                    </a>
+                </button>
             </div>
 
         </div>
 
-        <p class="copyright">
-            Copyright © 2024 Emily Tran. All rights reserved.
-        </p>
 
 
-    </div>
 
+
+    <!-- footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+          <div class="footer__link--wrapper">
+
+            <div class="footer__link--items">
+              <h2> ECE </h2>
+              <a href="https://ece.princeton.edu/academics/undergraduate/curriculum"> Concentrations </a>
+              <a href="https://ece.princeton.edu/academics/courses/current-offerings"> Coursework </a>
+              <a href="https://ece.princeton.edu/research"> Research </a> 
+            </div>
+
+            <div class="footer__link--items">
+              <h2> CS </h2>
+              <a href="https://www.cs.princeton.edu/ugrad/minor-computer-science"> Requirements </a> 
+              <a href="https://www.cs.princeton.edu/courses/schedule"> Courses </a>
+              <a href="https://www.cs.princeton.edu/research/areas"> Research </a>
+            </div>
+          </div>
+
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2> Finance </h2>
+              <a href="https://bcf.princeton.edu/academic-programs/minor-in-finance/apply-for-the-minor-in-finance/"> Pre-Requisites </a> 
+              <a href="https://bcf.princeton.edu/academic-programs/minor-in-finance/certificate-requirements/"> Requirements </a> 
+            </div>
+
+            <div class="footer__link--items">
+              <h2> Socials </h2>
+              <a href="/"> Github </a> 
+              <a href="/"> Instagram </a>
+              <a href="/"> LinkedIn </a> 
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- social media -->
+        <section class="social__media">
+          <div class="social__media--wrap">
+            <div class="social__logo">
+              <h2> EMILY TRAN </h2>
+            </div>
+
+            <p class="website__rights"> Copyright © Emily Tran 2025. All rights reserved. </p>
+
+            <div class="social__icons">
+
+                <!-- github -->
+              <a
+                class="social__icon--link"
+                href="https://github.com/eemilytraan"
+                target="_blank"
+                aria-label="Github"
+              > <i class="fi fi-brands-github"></i> </a>
+
+              <!-- instagram -->
+              <a
+                class="social__icon--link"
+                href="https://www.instagram.com/eemilytraan/"
+                target="_blank"
+                aria-label="Instagram"
+              > <i class="fi fi-brands-instagram"></i> </a>
+              
+              <!-- linkedin -->
+              <a
+                class="social__icon--link"
+                href="https://www.linkedin.com/in/emily-tran-9571b1279/"
+                target="_blank"
+                aria-label="LinkedIn"
+              > <i class="fi fi-brands-linkedin"></i> </a>
+            </div>
+
+          </div>
+        </section>
+      </div>
+
+
+      </div>
+
+
+
+
+    <script src="app.js"></script>
 </body>
+
 
 
 </html>
